@@ -17,4 +17,5 @@ class HomeViewModel(
         get() = lessonsRepository.lessons().asLiveData()
     val homeworkLiveData: LiveData<Result<List<Homework>>>
         get() = homeworkRepository.homework().asLiveData()
+
 }

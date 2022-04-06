@@ -15,5 +15,4 @@ interface LessonsAPIService {
     @POST("get_lesson.php")
     suspend fun getLesson(@Field("id") id: Int): LessonEntity
 
-
 }

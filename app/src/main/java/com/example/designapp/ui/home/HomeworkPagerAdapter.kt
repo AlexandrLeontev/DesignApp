@@ -50,4 +50,5 @@ class HomeworkPagerAdapter(context: Context) :
             }
         }
     }
+
 }

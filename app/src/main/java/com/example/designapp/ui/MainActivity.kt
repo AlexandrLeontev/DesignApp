@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
                         openFragment(classesFragment)
                     }
                 }
-
             })
         }
     }

@@ -11,4 +11,5 @@ class ViewModelFactory(private val injector: DKodein) : ViewModelProvider.Factor
         return injector.instanceOrNull<ViewModel>(tag = modelClass.simpleName) as T?
             ?: modelClass.newInstance()
     }
+
 }
