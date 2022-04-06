@@ -45,7 +45,6 @@ class HomeFragment : Fragment(R.layout.fragment_home), KodeinAware,
                 }
             }
         }
-
     }
 
     override fun onSkypeClick(lesson: Lesson) {

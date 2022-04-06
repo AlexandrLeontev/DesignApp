@@ -52,7 +52,6 @@ class LessonsPagerAdapter(context: Context, private val callback: LessonsAdapter
                 }
             }
         }
-
     }
 
 }
