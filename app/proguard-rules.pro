@@ -19,3 +19,27 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-assumenosideeffects class kotlin.jvm.internal.Intrinsics {
+    public static void checkExpressionValueIsNotNull(...);
+    public static void checkNotNullExpressionValue(...);
+    public static void checkReturnedValueIsNotNull(...);
+    public static void checkFieldIsNotNull(...);
+    public static void checkParameterIsNotNull(...);
+}
+-keepattributes *Annotation*, InnerClasses
+-dontnote kotlinx.serialization.AnnotationsKt # core serialization annotations
+
+-keepclassmembers class kotlinx.serialization.json.* {
+    *** Companion;
+}
+-keepclasseswithmembers class kotlinx.serialization.json.* {
+    kotlinx.serialization.KSerializer serializer(...);
+}
+
+-keep,includedescriptorclasses class com.example.data.**$$serializer { *; }
+-keepclassmembers class com.example.data.* {
+    *** Companion;
+}
+-keepclasseswithmembers class com.example.data.* {
+    kotlinx.serialization.KSerializer serializer(...);
+}
